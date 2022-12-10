@@ -31,7 +31,7 @@ p user_name.split("_")
 
 p last_login.replace("12/10/2021")
 p last_login
-# this method replaces the contents of the String object with the string passed in as an argument to the method.
+# this method permanently replaces the contents of the String object with the string passed in as an argument to the method.
 
 p user_name.eql?("coco_11AM")
 # this method evaluates a String object for equivalent length and content to the argument string. It returns a Boolean value of false if the two strings are not equivalent, and true if the two strings have the same length and content.
@@ -40,3 +40,14 @@ p last_login.empty?
 # this method takes no argument. It checks to see if the String object has no characters / length of zero. It returns a Boolean value of true if the string's length is zero, or false if the string's length is greater than zero.
 
 # 2: Do some research (either testing out with your own code or Googling) to build an understanding of what the `!` does, when at the end of a method name. Show your understading by providing an example and writing an explanation.
+
+# The bang character (!), when added to some methods, change the method to modify the object that the method is called on.
+# For example:
+
+name = "Caroline"
+
+p name.upcase # This will print "CAROLINE"
+p name # This will print the original value of the String, "Caroline"
+
+p name.upcase! # This will also print "CAROLINE"
+p name # This will print the modified value of the String, "CAROLINE" as a result of calling the method with an exclamation mark / bang method
